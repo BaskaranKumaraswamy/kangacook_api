@@ -43,3 +43,44 @@ Second CommandLine
 Url : http://127.0.0.1:8000/drinks/
 
 Ref: https://www.youtube.com/watch?v=i5JykvxUk_A
+
+seetings.py
+==========
+
+
+INSTALLED_APPS = [
+
+'rest_framework',
+
+'drinks',
+
+'django.contrib.admin',
+
+'django.contrib.auth',
+
+'django.contrib.contenttypes',
+
+'django.contrib.sessions',
+
+'django.contrib.messages',
+
+'django.contrib.staticfiles',
+
+]
+
+urls.py
+========
+
+from django.contrib import admin
+
+from django.urls import path
+
+from drinks import views
+
+urlpatterns = [
+
+path('admin/', admin.site.urls),
+
+path('drinks/', views.drink_list),
+
+]
