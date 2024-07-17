@@ -7,23 +7,21 @@ First CommandLine
 
 2 python3 -m venv .venv
 
-3 . .\.venv\bin\activate
+3 cd .\.venv\
 
-4 cd .\.venv\
+4 cd .\Scripts\
 
-5 cd .\Scripts\
+5 .\activate
 
-6 .\activate
+6 pip install django
 
-7 pip install django
+7 pip install djangorestframework
 
-8 pip install djangorestframework
+8 django-admin startproject drinks .
 
-9 django-admin startproject drinks .
+9 python manage.py runserver
 
 10 python manage.py runserver
-
-11 python manage.py runserver
 
 
 
@@ -43,3 +41,5 @@ Second CommandLine
 
 
 Url : http://127.0.0.1:8000/drinks/
+
+Ref: https://www.youtube.com/watch?v=i5JykvxUk_A
